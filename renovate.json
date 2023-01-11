@@ -3,5 +3,12 @@
   "extends": [
     "config:base"
   ],
-  "assignees": ["DenMette"]
+  "assignees": ["DenMette"],
+  "prConcurrentLimit": 2,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
 }
