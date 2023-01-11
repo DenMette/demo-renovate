@@ -3,8 +3,12 @@
   "extends": [
     "config:base"
   ],
+  "schedule": [
+    "after 11pm and before 2am every weekday", "every weekend"
+  ],
+  "timezone": "GMT",
   "assignees": ["DenMette"],
-  "prConcurrentLimit": 2,
+  "prConcurrentLimit": 4,
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
